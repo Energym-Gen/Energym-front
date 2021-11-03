@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { SobrenosComponent } from './sobrenos/sobrenos.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ComponentRodapeComponent } from './component-rodape/component-rodape.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SobrenosComponent
+    SobrenosComponent,
+    ComponentRodapeComponent
   ],
   imports: [
     BrowserModule,
