@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
 
 import { SobrenosComponent } from './sobrenos/sobrenos.component';
 
@@ -12,7 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
-    SobrenosComponent
+    SobrenosComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,
