@@ -9,6 +9,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { SobrenosComponent } from './sobrenos/sobrenos.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ComponentRodapeComponent } from './component-rodape/component-rodape.component';
 
 import { MenuComponent } from './menu/menu.component';
 
@@ -16,10 +17,11 @@ import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     SobrenosComponent,
     CadastrarComponent,
-    MenuComponent
+    MenuComponent,
+    SobrenosComponent,
+    ComponentRodapeComponent
 
   ],
   imports: [
