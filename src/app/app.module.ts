@@ -1,37 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-
-import { CadastrarComponent } from './cadastrar/cadastrar.component';
-
-import { SobrenosComponent } from './sobrenos/sobrenos.component';
-
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ComponentRodapeComponent } from './component-rodape/component-rodape.component';
-
 import { MenuComponent } from './menu/menu.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent,
-
-    SobrenosComponent,
-    CadastrarComponent,
     MenuComponent,
-    SobrenosComponent,
-    ComponentRodapeComponent,    LoginComponent
-
+    LoginComponent,
+    CadastrarComponent
   ],
-  imports: [
+  imports:[
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
