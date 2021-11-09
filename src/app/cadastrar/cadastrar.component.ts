@@ -36,12 +36,13 @@ tipoUsuario: string
   cadastrar(){
     this.user.tipo = this.tipoUsuario
 
-    if(this.user.senha != this.confirmarSenha){
+    if(this.user.senha !== this.confirmarSenha){
       alert('SENHA INCORRETA!')
-    } else {
+    } else {      
       console.log(this.user)
       this.authService.cadastrar(this.user).subscribe((resp: Usuario) => {
         this.user = resp
+        
         this.rota.navigate(['/login'])
         alert('Usuário cadastrado com sucesso!')
       })
