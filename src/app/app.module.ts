@@ -11,6 +11,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RodapeComponent } from './rodape/rodape.component';
     LoginComponent,
     CadastrarComponent,
     InicioComponent,
-    RodapeComponent
+    RodapeComponent,
+    TemaComponent
   ],
   imports:[
     BrowserModule,
