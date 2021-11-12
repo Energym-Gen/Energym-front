@@ -4,18 +4,17 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
 
-  {path:'',redirectTo: 'cadastrar',pathMatch: 'full'},
-  {path: 'cadastrar' ,component: CadastrarComponent},
-
-
   {path:'',redirectTo: 'login',pathMatch: 'full'},
+
   {path:'login',component: LoginComponent},
   {path:"cadastrar", component: CadastrarComponent},
   {path:"inicio", component: InicioComponent},
-  {path:"rodape", component: RodapeComponent}
+  {path:"rodape", component: RodapeComponent},
+  {path: "tema", component: TemaComponent}
 ];
 
 @NgModule({
