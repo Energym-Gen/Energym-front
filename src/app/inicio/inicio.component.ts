@@ -36,7 +36,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
     if(environment.token == ''){
       alert ('')
-      this.router.navigate(['/entrar']);
+      this.router.navigate(['/login']);
     }
     this.getAllTemas()
   }

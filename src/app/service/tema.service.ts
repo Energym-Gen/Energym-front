@@ -13,7 +13,11 @@ export class TemaService {
 
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
+
   }
+
+
+
 
   refreshToken(){
     this.token = {
@@ -22,7 +26,7 @@ export class TemaService {
   }
 
   getAllTemas(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://projetoenergym.herokuapp.com/tema/', this.token)
+    return this.http.get<Tema[]>('https://projetoenergym.herokuapp.com/tema', this.token)
   }
 
   getTemaById(id: number):Observable<Tema>{
@@ -30,7 +34,9 @@ export class TemaService {
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://projetoenergym.herokuapp.com/tema/', tema, this.token)
+
+    return this.http.post<Tema>('https://projetoenergym.herokuapp.com/tema', tema, this.token)
+
   }
 
 

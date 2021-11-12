@@ -20,6 +20,7 @@ userLogin: UsuarioLogin = new UsuarioLogin()
 
   ngOnInit(){
     window.scroll(0,0)
+    
   }
 
   entrar(){
@@ -29,7 +30,7 @@ userLogin: UsuarioLogin = new UsuarioLogin()
       environment.token = this.userLogin.token
       environment.nome = this.userLogin.nome
       environment.foto = this.userLogin.foto
-      environment.id = this.userLogin.usuarioID     
+      environment.id = this.userLogin.usuarioID
       this.rota.navigate(['/inicio'])
     }, erro =>{
       if(erro.status == 400){
