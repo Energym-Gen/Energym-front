@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
@@ -61,12 +62,14 @@ export class InicioComponent implements OnInit {
 
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
+      console.log(resp)
       this.listaPostagens = resp
     })
   }
 
   findByIdUsuario(){
     this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) =>{
+      console.log(environment.id)
       this.usuario = resp
     })
   }
@@ -83,6 +86,7 @@ export class InicioComponent implements OnInit {
       alert('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
       this.getAllPostagens()
+      this.router.navigate(['/inicio'])
     })
   }
 
