@@ -39,8 +39,8 @@ export class PostagemDeleteComponent implements OnInit {
 
   apagar(){
     this.postagemService.deletePostagem(this.idPostagem).subscribe(()=>{
-      alert('Postagem deletada com sucesso!')
       this.router.navigate(['/inicio'])
+      alert('Postagem deletada com sucesso!')
     })
   }
 

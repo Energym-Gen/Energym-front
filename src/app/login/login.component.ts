@@ -20,6 +20,7 @@ userLogin: UsuarioLogin = new UsuarioLogin()
 
   ngOnInit(){
     window.scroll(0,0)
+    
   }
 
   entrar(){

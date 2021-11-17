@@ -23,14 +23,29 @@ export class TemaComponent implements OnInit {
     window.scroll(0, 0);
 
     if (environment.token == '') {
-      this.router.navigate(['/entrar']);
+      this.router.navigate(['/login']);
     }
-
+    this.temaService.refreshToken();
+    this.getAllTemas();
 
   }
+  getAllTemas(){
+    this.temaService.getAllTemas().subscribe((resp: Tema[])=>{
+      this.listaTema= resp
+    })
+  }
 
-  cadastrar(){
-    
+  cadastrarTema(){
+    console.log(environment.token)
+    console.log(this.tema)
+    this.temaService.postTema(this.tema).subscribe((resp: Tema)=>{
+      this.tema = resp
+      alert('Tema cadastrado com sucesso!')
+      this.tema = new Tema()
+      this.getAllTemas()
+
+    })
+
 
   }
 

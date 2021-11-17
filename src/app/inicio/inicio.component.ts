@@ -6,7 +6,9 @@ import { Postagem } from '../model/Postagem';
 import { Tema } from '../model/Tema';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
+
 import { PostagemService } from '../service/postagem.service';
+
 import { TemaService } from '../service/tema.service';
 
 @Component({
@@ -16,22 +18,29 @@ import { TemaService } from '../service/tema.service';
 })
 export class InicioComponent implements OnInit {
 
+
   postagem: Postagem = new Postagem()
-  listaPostagens: Postagem[]
-  
+  listaPostagens: Postagem[] 
+
+
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
 
+
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
 
+
+  
   constructor(
     private router: Router,
     private postagemService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService
-  ) { }
+    private authh: AuthService
+  ) {}
+
+
 
   ngOnInit(){
 
@@ -41,7 +50,7 @@ export class InicioComponent implements OnInit {
       this.router.navigate(["/login"])
     }
 
-    this.authService.refreshToken()
+    this.authh.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
 
@@ -68,7 +77,7 @@ export class InicioComponent implements OnInit {
   }
 
   findByIdUsuario(){
-    this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) =>{
+    this.authh.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) =>{
       console.log(environment.id)
       this.usuario = resp
     })
@@ -90,4 +99,7 @@ export class InicioComponent implements OnInit {
     })
   }
 
+
 }
+
+
