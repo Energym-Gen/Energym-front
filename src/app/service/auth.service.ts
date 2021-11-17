@@ -30,6 +30,11 @@ export class AuthService {
     return this.http.post<Usuario>('https://projetoenergym.herokuapp.com/usuarios/cadastrar', user)
   }
 
+  atualizar(user: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://projetoenergym.herokuapp.com/usuarios/atualizar', user, this.token)
+  }
+
+
   getByIdUsuario(id: number): Observable<Usuario>{
     return this.http.get<Usuario>(`https://projetoenergym.herokuapp.com/usuarios/${id}`, this.token)
   }
