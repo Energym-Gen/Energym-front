@@ -17,6 +17,7 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { PostagemComponent } from './postagem/postagem.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     TemaDeleteComponent,
     PostagemComponent,
     PostagemEditComponent,
-    PostagemDeleteComponent
+    PostagemDeleteComponent,
+    UsuarioEditComponent
   ],
   imports:[
     BrowserModule,
