@@ -94,4 +94,80 @@
       </div>
   </div>
 
+        <!-- MODAL NOVA POSTAGEM -->
+        <div
+        class="modal fade"
+        id="novaPostagem"
+        tabindex="-1"
+        aria-labelledby="novaPostagem"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+
+                <label for="titulo">Título</label>
+                <input
+                  [(ngModel)]="postagem.titulo"
+                  type="text"
+                  placeholder="Digite o titulo"
+                  class="form-control mb-2"
+                />
+
+                <label for="titulo">Duração do Treino(em minutos)</label>
+                <input
+                  [(ngModel)]="postagem.texto"
+                  type="text"
+                  placeholder="Digite o titulo"
+                  class="form-control mb-2"
+                />
+
+                <p>
+                  Escolha um tema ou
+                  <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
+                </p>
+                <select
+                  name=""
+                  id=""
+                  class="form-control"
+                  [(ngModel)]="idTema"
+                  (change)="getTemaById()"
+                >
+                  <option *ngFor="let item of listaTemas" value="{{ item.id }}">
+                    {{ item.equipamento}}
+                  </option>                  
+                </select>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  (click)="publicar()"
+                  data-dismiss="modal"
+                >
+                  Publicar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </div>
