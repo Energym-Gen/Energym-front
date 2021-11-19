@@ -37,15 +37,11 @@ h1:after {
   );
 }
 
-
-
-
-
 /* formatando o cabeçalho dos formulários */
 h1 {
   box-shadow: 0.1em 0.1em 0.2em #545454;
   font-size: 48px;
-  color: #EFFA00;
+  color: #effa00;
   text-shadow: 0.1em 0.1em 0.2em black;
   padding: 10px 0;
   font-family: Arial, sans-serif;
@@ -80,8 +76,6 @@ h1:after {
 p {
   margin-bottom: 15px;
   color: #ffffff;
-
-
 }
 p:first-child {
   margin: 0px;
@@ -89,41 +83,37 @@ p:first-child {
 label {
   color: #ffffff;
   position: relative;
-  text-shadow: 0.1em 0.1em 0.2em black
-
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-
-
-/*Estilo botão "Cadastrar"*/
 .style-bt {
   border-color: #d8db34;
-  color: #292e1e;
-  box-shadow: 0 0 40px 40px #EFFA00 inset, ;
+  box-shadow: 0 0 40px 40px #effa00 inset;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   border-radius: 5px;
   font-weight: bold;
-
+  background: #effa00;
 }
 .style-bt:hover {
   box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
-  background:#EFFA00;
-  
+  background: #effa00;
 }
-.style-btc {
-  border-color:#ffffff;
-  box-shadow: 0 0 40px 40px #A90f33 inset;
-  color: #292e1e;
+.style-cancelar {
+  background-color: #a90f33;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: #a90f33;
+  box-shadow: 0 0 40px 40px #a90f33 inset;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
   border-radius: 5px;
   font-weight: bold;
 }
-.style-btc:hover {
-  box-shadow: 0 0 10px 0 #2e3028 inset, 0 0 10px 4px #A90f33;
+.style-cancelar:hover {
+  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+  background: #a90f33;
 }
-
-
-
 
 #cadastro {
   position: absolute;
@@ -132,7 +122,6 @@ label {
   padding: 18px 6% 60px 6%;
   margin: 0 0 35px 0;
   background-color: #545454;
-
 
   border-radius: 16px;
 
@@ -144,6 +133,3 @@ label {
   animation-timing-function: ease;
   animation-fill-mode: both;
 }
-
-
-
