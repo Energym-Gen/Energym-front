@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sobrenos.component.css']
 })
 export class SobrenosComponent implements OnInit {
-
-  constructor() { }
+  
+  
+  constructor(
+    
+  ) { 
+    
+  }
 
   ngOnInit(): void {
   }
-
+  
 }

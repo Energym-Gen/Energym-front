@@ -6,3 +6,114 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.backg {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.backg-cad {
+    background-color:#545454;
+   
+}
+
+#btn_cad{
+    background-color: #545454;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: #d8db34;
+    box-shadow: 0 0 40px 40px #EFFA00 inset, ;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
+   
+}
+
+#btn_cad:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+    background:#545454;
+    
+  }
+
+#btn_log{
+    background-color: #EFFA00;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: #d8db34;
+    box-shadow: 0 0 40px 40px #EFFA00 inset, ;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
+   
+}
+
+#btn_log:hover {
+    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+    background:#EFFA00;
+    
+  }
+
+.backg-text-cad{
+  color:#545454;
+  font-size: 38;
+  
+  
+}
+.backg-text-log{
+    color:rgb(41, 43, 44);
+    font-size: 32;
+    
+  }
+  
+  .card{
+  /* position: relative; */
+  /* z-index: 1; */
+  background: #545454;
+  max-width: 360px;
+  padding: 45px;
+  height: 70vh;
+  border: 0
+  }
+
+  .bordinha {
+    box-shadow: 0 0 1em grey
+  }
+
+  .backg-card2{
+    background-color: #EFFA00;
+    max-width: 360px;
+    width: 340px;
+    padding: 45px;
+    height: 70vh;
+    border: 0
+  }
+
+  .font-cad{
+    font-weight: bold;
+  }
+
+  .font-energym{
+   font-weight: bolder;
+  }
+
+  .color-inicio{
+     color: #EFFA00 !important;
+  }
+  
+  label {
+    color: #ffffff;
+    position: relative;
+    text-shadow: 0.1em 0.1em 0.2em black
+  }
+
+  
+  
+
+  
+
+
+  
+
+  
+  
