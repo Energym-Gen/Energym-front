@@ -1,27 +1,51 @@
-# EnergymFront
+# <strong>Energym </strong>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+## < Indice >
 
-## Development server
+<ul>
+    <li>Sobre</li>
+    <li>Tecnologias Utilizadas</li>
+    <li>Desenvolvedores</li>
+</ul>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## < Sobre >
 
-## Build
+<p>
+    Energym é uma rede social para academias ecológicas que geram energia elétrica por meio de seus equipamentos através do uso dos clientes da rede. 
+        Revertendo a energia gerada para populações em situação de extrema vulnerabilidade.
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## < Tecnologias Utilizadas >
 
-## Running unit tests
+### Back-End
+<ul>
+    <li>Java</li>
+    <li>Spring Boot</li>
+    <li>MySQL</li>
+</ul>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Front-End
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Bootstrap</li>
+    <li>Angular</li>
+    <li>TypeScript</li>
+</ul>
 
-## Running end-to-end tests
+## < Desenvolvedores >
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<ul>
+    <li>Gabriela</li>
+    <li>Vitor Vinicius</li>
+    <li>Matheus</li>
+    <li>Raniel</li>
+    <li>Rafaela</li>
+    <li>Wendell</li>
+</ul>
 
-## Further help
+## Implementações futuras*
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Instrutores*
