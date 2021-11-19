@@ -1,22 +1,25 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6" id="img-bg"></div>
+  <div class="row justify-content-center">
 
-    <div class="col-md-6 mt-5 mb-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
-          <h1 class="text-center">Cadastro</h1>
 
-          <div class="form-group">
+
+
+    <!--Formulario de cadastro>-->
+    <div id="cadastro" >
+        <h1>Cadastro</h1>
+
+        <div class="form-group">
             <label for="nome">Nome </label>
             <input [(ngModel)]='user.nome'
-            class="form-control"
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Seu nome"
+            class="form-control "
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="João Mendes"
             />
-          </div>
+
+
+        </div>
 
           <div class="form-group">
             <label for="usuario">Usuário </label>
@@ -25,7 +28,7 @@
               type="text"
               name="usuario"
               id="usuario"
-              placeholder="Seu usuário"
+              placeholder="João@Mendes.com"
             />
           </div>
 
@@ -47,7 +50,7 @@
               type="password"
               name="senha"
               id="senha"
-              placeholder="Sua senha"
+              placeholder="********"
 
               />
           </div>
@@ -59,7 +62,7 @@
               type="password"
               name="confirmSenha"
               id="confirmSenha"
-              placeholder="Confirme sua senha"
+              placeholder="********"
             />
           </div>
 
@@ -71,12 +74,11 @@
               <option value="admin">Administrador</option>
             </select>
           </div>
+
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-danger mr-4" routerLink = '/login'>Cancelar</button>
-            <button type="submit" class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
+            <button  class= "mr-4 " id="btn_log" routerLink = '/login'>Cancelar</button>
+            <button type="submit" id="btn_log" (click)='cadastrar()'>Cadastrar</button>
           </div>
         </div>
-      </div>
-    </div>
+
   </div>
-</div>
