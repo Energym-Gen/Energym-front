@@ -8,7 +8,9 @@ import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
+import { PerguntasfrequentesComponent } from './perguntasfrequentes/perguntasfrequentes.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { SobrenosComponent } from './sobrenos/sobrenos.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
@@ -28,7 +30,10 @@ const routes: Routes = [
   
   {path: "tema", component: TemaComponent},
   
-  {path: "usuario-edit/:id", component: UsuarioEditComponent}
+  {path: "usuario-edit/:id", component: UsuarioEditComponent},
+
+  {path:'sobrenos',component: SobrenosComponent},
+  {path: 'perguntasfrequentes', component: PerguntasfrequentesComponent}
 
 ];
 
