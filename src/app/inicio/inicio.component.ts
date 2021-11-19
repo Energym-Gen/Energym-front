@@ -26,10 +26,14 @@ export class InicioComponent implements OnInit {
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
+  id = environment.id
 
 
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
+
+  ecoTreino: number
+
 
 
   
@@ -97,6 +101,11 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens()
       this.router.navigate(['/inicio'])
     })
+  }
+
+  calculaEco(ecoantes: number, minut:number){
+    this.postagem.texto = " "+ecoantes*minut   
+
   }
 
 

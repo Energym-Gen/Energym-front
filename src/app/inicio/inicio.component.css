@@ -1,0 +1,35 @@
+
+.bgside{
+    background-color: rgb(46, 221, 146);
+}
+.bgviolet{
+    background-color: blueviolet;
+}
+
+.fontblack{
+    color: black;
+}
+
+.alturalarg{
+    width: 50%;
+    height: 30%;
+
+
+}
+
+.fontmont{
+    font-family:'Montserrat', sans-serif;
+}
+
+.br-16{
+    border-radius: 20px;
+}
+
+.jumbobox{
+    width: 865;
+    height: 180;
+}
+
+a{
+    color:black
+}
