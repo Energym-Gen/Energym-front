@@ -18,6 +18,7 @@ import { PostagemComponent } from './postagem/postagem.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { PerguntasfrequentesComponent } from './perguntasfrequentes/perguntasfrequentes.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
     PostagemComponent,
     PostagemEditComponent,
     PostagemDeleteComponent,
-    UsuarioEditComponent
+    UsuarioEditComponent,
+    PerguntasfrequentesComponent
   ],
   imports:[
     BrowserModule,

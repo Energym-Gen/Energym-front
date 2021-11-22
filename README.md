@@ -1,27 +1,56 @@
-# EnergymFront
+<em>* Em Desenvolvimento *</em>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+# <strong>Energym </strong>
 
-## Development server
+## < Indice >
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<ul>
+    <li>Sobre</li>
+    <li>Tecnologias Utilizadas</li>
+    <li>Desenvolvedores</li>
+</ul>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## < Sobre >
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p>
+    Energym é uma rede social para academias ecológicas que geram energia elétrica por meio de seus equipamentos através do uso dos clientes da rede.   
+</p>
 
-## Running unit tests
+<p>
+  A plataforma tem como intuito divulgar atualizações de clientes, através de postagens, onde que o cliente faz uma publicação e a plataforma informa o quanto de energia foi gerado.
+</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## < Tecnologias Utilizadas >
 
-## Running end-to-end tests
+### Back-End
+<ul>
+    <li>Java</li>
+    <li>Spring Boot</li>
+    <li>MySQL</li>
+</ul>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Front-End
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Bootstrap</li>
+    <li>Angular</li>
+    <li>TypeScript</li>
+</ul>
 
-## Further help
+## < Desenvolvedores >
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<ul>
+    <li>Gabriela</li>
+    <li>Vitor Vinicius</li>
+    <li>Matheus</li>
+    <li>Raniel</li>
+    <li>Rafaela</li>
+    <li>Wendell</li>
+</ul>
+
+## Implementações futuras*
+
+## Instrutores*
