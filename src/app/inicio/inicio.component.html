@@ -1,173 +1,219 @@
-<div class="container">
 
-  <div class="row">
-      <div class="col-sm-3 bgside"> <!-- SIDEBAR DIV -->
-        <nav class="navbar-expand-md navbar-dark flex-md-column flex-row align-items-center  text-center sticky-top " id="sidebar">
-          <button type="button" class="navbar-toggler border-0 order-1" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse order-last" id="nav">
-        
-        <ul class="navbar-nav flex-column w-100 justify-content-center">
-          <li class="nav-item mt-2 ">
-            <button
-            class="btn btn-light mt-2 fontmont w-75 br-16"
-            data-toggle="modal"
-            data-target="#novaPostagem"
-            >
-            NOVO TREINO
-            </button>
-          </li>
-          <li class="nav-item ">
-            <a href="#" class=" nav-link active"> Feed</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class=" nav-link"> Meus Treinos</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"> Treinos Bicicleta </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"> Treinos Esteira </a>
-            <hr>
-          </li>
+<div class="container-fluid">
+  <div class="row p-0">
+    <div class="col-sm-2 bgside p-0 mr-0">
+      <!-- SIDEBAR DIV -->
+      <nav
+        class="
+          navbar-expand-md 
+          flex-md-column flex-row
+          align-items-center
+          text-center
+          p-0
+        "
+        id="sidebar"
+      >
+        <button
+          type="button"
+          class="navbar-toggler border-0 order-1"
+          data-toggle="collapse"
+          data-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <li class="nav-item">
-            <p class="title text-white font-weight-bold "> Opções </p>
-          </li>
-          <li class="nav-item">
-            <a [routerLink]="['/usuario-edit', id]" class="nav-link"> Editar Perfil </a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/tema" class="nav-link"> Editar Equipamentos </a>
+        <div class="p-0 navbar-collapse order-last" id="nav">
+          <ul class="navbar-nav flex-column w-100 justify-content-center">
+            <li class="nav-item mt-2 justify-content-center">
+              <button
+                class="btn btn-light mt-2 mb-2 fsi-17 fontmont w-75 br-20 mostbold bg-vclaro"
+                data-toggle="modal"
+                data-target="#novaPostagem"
+              >
+                NOVO TREINO
+              </button>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-dumbbell"></i>
+              <p class="title mostbold fsi-17">Treinos</p>
+            </li>
+            <li class="nav-item fontblack">
+              <a href="#" class="nav-link active fontblack semibold unders"> Feed</a>
+            </li>
+            <li class="nav-item fontblack">
+              <a href="#" class="nav-link fontblack semibold unders"> Meus Treinos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fontblack semibold unders"> Treinos Bicicleta </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link fontblack semibold unders"> Treinos Esteira </a>
+              <hr />
+            </li>
 
-          </li>
+            <li class="nav-item">
+              <p class="title fontblack mostbold fsi-17">Opções</p>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/usuario-edit', id]" class="nav-link fontblack semibold unders">
+                Editar Perfil
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/tema" class="nav-link fontblack font-weight-bold unders"> Editar Equipamentos </a>
+            </li>
 
-          <li class="nav-item mt-5">
-            <hr>
-            <a routerLink="/perguntas-frequentes" class="nav-link"> Perguntas Frequentes </a>
-          </li>
+            <li class="nav-item mt-5">
+              <hr />
+              <a routerLink="/perguntasfrequentes" class="nav-link fontblack font-weight-light">
+                Perguntas Frequentes
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a routerLink="/sobrenos" class="nav-link"> Sobre Nós </a>
-          </li>
+            <li class="nav-item">
+              <a routerLink="/sobrenos" class="nav-link fontblack font-weight-light"> Sobre Nós </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
+    <div class="col-sm-10  p-0 ml-0 w-100 bgviolet justify-content-center ">
+      <!-- <p>coluna 2</p> -->
 
-        
-        </ul>
-        
+      <!--CONTEUDO-->
+   
 
-      </div>  
-
-    </nav>
-      </div>
-
-      <div class="col-sm-9 bgviolet">
-        <!-- <p>coluna 2</p> -->
-        <!--CONTEUDO-->
-          <!-- <div class="row"><p>Linha DIreita 1</p></div>   -->
-
-
-
-          <div class="row"><!-- SEGUNDA LINHA POSTS-->
-            <div class="col-sm-12">
-              <div class="card text-center p-2 mt-1 mb-4" *ngFor="let item of listaPostagens">
-                  <h1> Xwatts</h1>
-                  <h5 class="card-title m-0">{{ item.titulo }}</h5>
-                  <h5 class="card-title m-0">{{ item.usuario.nome }} correu por {{item.texto}} MINUTOS</h5>
-                  <small class="text-muted">no equipamento {{ item.tema.equipamento }}</small>
-                  <p class="card-text mt-3">e economizou {{ item.texto }}</p>
-                  <p class="card-text">
-                    <small class="text-muted"
-                      >{{ item.date | date: "dd/MM/yyyy" }} ás
-                      {{ item.date | date: "HH:mm" }}</small
-                    >
-                  </p>
-                  <p class="card-text">
-                  </p>
-              </div>
+        <!--PRIMEIRA LINHA CARROUSEL-->
+        <div id="carouselExampleControls" class="carousel slide p-0 ml-0 mb-0 mt-0 w-100" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active p-0">
+              <img src="https://i.imgur.com/aUlDmty.png" class="d-block w-100 h-100" alt="...">
             </div>
-          </div>   
-          
-          
+            <div class="carousel-item p-0">
+              <img src="https://i.imgur.com/SCcA2Zw.png" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item p-0">
+              <img src="https://i.imgur.com/8v47gR5.png" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+    
+
+   
+
+      <div class="row p-0 mt-0">
+        <!-- SEGUNDA LINHA POSTS-->
+
+        <div class="ml-10 col-sm-8">
+          <div
+            class="card text-center p-2 mt-4 mb-4 bgpostagem"
+            *ngFor="let item of listaPostagens"
+          >
+            <h1>Xwatts</h1>
+            <h5 class="card-title m-0">{{ item.titulo }}</h5>
+            <h5 class="card-title m-0">
+              {{ item.usuario.nome }} correu por {{ item.texto }} MINUTOS
+            </h5>
+            <small class="text-muted"
+              >no equipamento {{ item.tema.equipamento }}</small
+            >
+            <p class="card-text mt-3">e economizou {{ item.texto }}</p>
+            <p class="card-text">
+              <small class="text-muted"
+                >{{ item.date | date: "dd/MM/yyyy" }} ás
+                {{ item.date | date: "HH:mm" }}</small
+              >
+            </p>
+            <p class="card-text"></p>
+          </div>
       </div>
+    </div>
   </div>
 
-        <!-- MODAL NOVA POSTAGEM -->
-        <div
-        class="modal fade"
-        id="novaPostagem"
-        tabindex="-1"
-        aria-labelledby="novaPostagem"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
+  <!-- MODAL NOVA POSTAGEM -->
+  <div
+    class="modal fade"
+    id="novaPostagem"
+    tabindex="-1"
+    aria-labelledby="novaPostagem"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="titulo">Título</label>
+            <input
+              [(ngModel)]="postagem.titulo"
+              type="text"
+              placeholder="Digite o titulo"
+              class="form-control mb-2"
+            />
 
-                <label for="titulo">Título</label>
-                <input
-                  [(ngModel)]="postagem.titulo"
-                  type="text"
-                  placeholder="Digite o titulo"
-                  class="form-control mb-2"
-                />
+            <label for="titulo">Duração do Treino(em minutos)</label>
+            <input
+              [(ngModel)]="postagem.texto"
+              type="text"
+              placeholder="Digite o titulo"
+              class="form-control mb-2"
+            />
 
-                <label for="titulo">Duração do Treino(em minutos)</label>
-                <input
-                  [(ngModel)]="postagem.texto"
-                  type="text"
-                  placeholder="Digite o titulo"
-                  class="form-control mb-2"
-                />
+            <p>
+              Escolha um tema ou
+              <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
+            </p>
+            <select
+              name=""
+              id=""
+              class="form-control"
+              [(ngModel)]="idTema"
+              (change)="getTemaById()"
+            >
+              <option *ngFor="let item of listaTemas" value="{{ item.id }}">
+                {{ item.equipamento }}
+              </option>
+            </select>
+          </div>
 
-                <p>
-                  Escolha um tema ou
-                  <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
-                </p>
-                <select
-                  name=""
-                  id=""
-                  class="form-control"
-                  [(ngModel)]="idTema"
-                  (change)="getTemaById()"
-                >
-                  <option *ngFor="let item of listaTemas" value="{{ item.id }}">
-                    {{ item.equipamento}}
-                  </option>                  
-                </select>
-
-              </div>
-
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">
-                  Cancelar
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-success"
-                  (click)="publicar()"
-                  data-dismiss="modal"
-                >
-                  Publicar
-                </button>
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Cancelar
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              (click)="publicar()"
+              data-dismiss="modal"
+            >
+              Publicar
+            </button>
           </div>
         </div>
       </div>
-
+    </div>
+  </div>
 </div>
