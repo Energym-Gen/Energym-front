@@ -36,9 +36,10 @@
                 NOVO TREINO
               </button>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-flex justify-content-center align-items-center">
               <i class="fas fa-dumbbell"></i>
-              <p class="title mostbold fsi-17">Treinos</p>
+              <img src="../../assets/img/haltere.png" alt="ícone de um haltere" width="30px">
+              <p class="title mostbold fsi-17 m-0 ml-1">Treinos</p>
             </li>
             <li class="nav-item fontblack">
               <a href="#" class="nav-link active fontblack semibold unders"> Feed</a>
@@ -54,8 +55,9 @@
               <hr />
             </li>
 
-            <li class="nav-item">
-              <p class="title fontblack mostbold fsi-17">Opções</p>
+            <li class="nav-item d-flex justify-content-center">
+              <img src="../../assets/img/chave-dupla.png" alt="icone de ferramenta" width="30px" height="30px">
+              <p class="title fontblack mostbold fsi-17 m-0 ml-1">Opções</p>
             </li>
             <li class="nav-item">
               <a [routerLink]="['/usuario-edit', id]" class="nav-link fontblack semibold unders">
@@ -119,25 +121,46 @@
 
         <div class="ml-10 col-sm-8">
           <div
-            class="card text-center p-2 mt-4 mb-4 bgpostagem"
+            class="card text-center mt-4 mb-4 bgpostagem row d-inline-flex"
             *ngFor="let item of listaPostagens"
           >
-            <h1>Xwatts</h1>
-            <h5 class="card-title m-0">{{ item.titulo }}</h5>
-            <h5 class="card-title m-0">
-              {{ item.usuario.nome }} correu por {{ item.texto }} MINUTOS
-            </h5>
-            <small class="text-muted"
-              >no equipamento {{ item.tema.equipamento }}</small
-            >
-            <p class="card-text mt-3">e economizou {{ item.texto }}</p>
+          <div class="row text-light container pb-1">
+          <div class="col-md-3 align-self-center align-items-center">
+            <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px">
+          </div>
+          <div class="col-md-5 px-1">
+            <div class="row justify-content-start">
+              <div class="w-100 d-flex">
+              <div class="text-center">
+                <h1 class="p-0 pl-3 m-0 font-weight-bold rem-4">{{item.texto}}</h1>
+              </div>
+              <div><h6 class="p-0 pt-3">Watts</h6></div>
+            </div>
+            <div class="text-left">
+            </div>            
+              <h6 class="card-title m-0 text-left">
+                {{ item.usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold">{{ item.texto }} MINUTOS</span>
+              </h6>
+              <small class="text-muted"
+                >no equipamento <span class="font-weight-bold">{{ item.tema.equipamento }}</span></small
+              >
+              <p class="card-text">e economizou {{ item.texto }}khz</p>
+            </div>
+            
+          </div>
+          <div class="col-md-4 h-100 align-self-center">            
+              <h5 class="card-title font-weight-bold"><span class="font-weight-bold">{{ item.titulo }}</span></h5>
             <p class="card-text">
               <small class="text-muted"
                 >{{ item.date | date: "dd/MM/yyyy" }} ás
                 {{ item.date | date: "HH:mm" }}</small
               >
             </p>
-            <p class="card-text"></p>
+            <p class="card-text"></p>           
+            
+          </div>
+        </div>
+          
           </div>
       </div>
     </div>
