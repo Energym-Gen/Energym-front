@@ -25,13 +25,6 @@
   padding: 10%;
   border-radius: 10px;
 }
-.btnSubmit {
-  width: 50%;
-  border-radius: 1rem;
-  padding: 1.5%;
-  border: none;
-  cursor: pointer;
-}
 
 #btn_cad {
   background-color: transparent;
@@ -43,11 +36,10 @@
   transition: all 150ms ease-in-out;
   border-radius: 20px;
   font-weight: bold;
-  padding: 50%;
-  
+  box-sizing: border-box;
 }
 #btn_cad:hover {
-  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+  box-shadow: 0 0 2px 0 #f3efef inset, 0 0 6px 4px #f3efef;
 }
 
 #btn_log {
@@ -66,7 +58,7 @@
 }
 
 #btn_log:hover {
-  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+  box-shadow: 0 0 2px 0 #f3efef inset, 0 0 6px 4px #f3efef;
   background: #effa00;
 }
 
@@ -83,6 +75,11 @@
  .font{
   font-weight: 1000;
  }
+
+ ::placeholder{
+   color: #292e1e;
+}
+
 
  
 
