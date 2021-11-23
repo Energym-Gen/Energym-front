@@ -175,9 +175,9 @@
     aria-hidden="true"
   >
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+      <div class="modal-content ">
+        <div class="modal-header lightBg">
+          <h5 class="headerStyle modal-title" id="exampleModalLabel">Nova Postagem</h5>
           <button
             type="button"
             class="close"
@@ -187,14 +187,14 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body lightBg">
           <div class="form-group">
             <label for="titulo">Título</label>
             <input
               [(ngModel)]="postagem.titulo"
               type="text"
               placeholder="Digite o titulo"
-              class="form-control mb-2"
+              class="inputStyle form-control mb-2"
             />
 
             <label for="titulo">Duração do Treino(em minutos)</label>
@@ -202,7 +202,7 @@
               [(ngModel)]="postagem.texto"
               type="text"
               placeholder="Digite o titulo"
-              class="form-control mb-2"
+              class="inputStyle form-control mb-2"
             />
 
             <p>
@@ -212,7 +212,7 @@
             <select
               name=""
               id=""
-              class="form-control"
+              class="inputStyle form-control"
               [(ngModel)]="idTema"
               (change)="getTemaById()"
             >
@@ -223,12 +223,12 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
+            <button type="button" class="btn btnCancel" data-dismiss="modal">
               Cancelar
             </button>
             <button
               type="button"
-              class="btn btn-success"
+              class="btn btnAtualizar"
               (click)="publicar()"
               data-dismiss="modal"
             >
