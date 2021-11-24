@@ -57,6 +57,9 @@ export class InicioComponent implements OnInit {
     this.authh.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
+    this.findByIdUsuario()
+
+    console.log(this.usuario.postagens)
 
   }
 
@@ -64,7 +67,6 @@ export class InicioComponent implements OnInit {
     this.temaService.getAllTemas().subscribe((resp: Tema[]) =>{
       this.listaTemas = resp
     })
-
   }
 
   getTemaById(){
@@ -75,14 +77,12 @@ export class InicioComponent implements OnInit {
 
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
-      console.log(resp)
       this.listaPostagens = resp
     })
   }
 
   findByIdUsuario(){
     this.authh.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) =>{
-      console.log(environment.id)
       this.usuario = resp
     })
   }

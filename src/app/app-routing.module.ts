@@ -35,6 +35,7 @@ const routes: Routes = [
   {path:'sobrenos',component: SobrenosComponent},
   {path: 'perguntasfrequentes', component: PerguntasfrequentesComponent}
 
+
 ];
 
 @NgModule({
