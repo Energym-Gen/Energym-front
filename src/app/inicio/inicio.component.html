@@ -130,21 +130,27 @@
           </div>
           <div class="col-md-5 px-1">
             <div class="row justify-content-start">
-              <div class="w-100 d-flex">
-              <div class="text-center">
-                <h1 class="p-0 pl-3 m-0 font-weight-bold rem-4">{{item.texto}}</h1>
+
+            <div class="w-100 mb-0 d-flex">
+
+              <div class="text-left">
+                <h1 class="text-left font-weight-bold rem-4 mb-0 font-italic">{{item.texto}} </h1>
               </div>
-              <div><h6 class="p-0 pt-3">Watts</h6></div>
+              <div class="ml-2 mt-5"><span class="align-text-bottom"> watts</span></div>
             </div>
+
             <div class="text-left">
-            </div>            
-              <h6 class="card-title m-0 text-left">
-                {{ item.usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold">{{ item.texto }} MINUTOS</span>
+            </div>      
+
+              <h6 class="card-title pt-0 m-0 mb-1 text-left">
+                {{ item.usuario.nome.split(" ",1) }} correu por <span class=" font-weight-bold font-italic">{{ item.texto }} MINUTOS</span>
               </h6>
-              <small class="text-muted"
-                >no equipamento <span class="font-weight-bold">{{ item.tema.equipamento }}</span></small
-              >
-              <p class="card-text">e economizou {{ item.texto }}khz</p>
+
+            <div>
+              <h6 class="card-title mb-1 text-left">no equipamento <span class="font-weight-bold font-italic">{{ item.tema.equipamento }}</span></h6>
+              <p class="card-text text-left"> e economizou <span class="font-italic font-weight-bold"> {{ item.texto }}khz</span></p>
+            </div>
+
             </div>
             
           </div>
