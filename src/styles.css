@@ -4,6 +4,12 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* scroll smooth */
+html{
+  scroll-behavior: smooth;
+}
+
 .bg-fundo{
     background-color: #545454;
 }
