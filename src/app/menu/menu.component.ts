@@ -24,9 +24,8 @@ export class MenuComponent implements OnInit {
     this.rota.navigate(['/login'])
     environment.token = ''
     environment.nome = ''
-    environment.foto = ''
     environment.id = 0
   }
-  
+
 
 }
