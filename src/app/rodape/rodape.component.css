@@ -4,6 +4,10 @@ ul.social-network{
   padding: 0;
 }
 
+.bgrodape{
+  background-image: linear-gradient(#00987e,#068f78, #075f50);
+}
+
 ul.social-network li{
 display: inline;
 margin: 0;
