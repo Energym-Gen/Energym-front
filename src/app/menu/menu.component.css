@@ -4,3 +4,27 @@
 a{
   cursor: pointer;
 }
+h1{
+  padding-left: 20px;
+
+  color: #EFEFEF;
+  text-shadow:
+           -1px -1px 0px #00987F,
+           -1px 1px 1px #00987F,
+            2px -1px 0px #00987F,
+            3px 2px 0px #00987F;
+
+
+
+
+-webkit-text-stroke-color: #00987F;
+font-size: 3em;
+
+}
+.nav-color {
+  color:black;
+  background-color: #EFEFEF;
+  color:black;
+}
+
+
