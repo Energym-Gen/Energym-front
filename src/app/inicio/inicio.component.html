@@ -3,7 +3,7 @@
     <div class="col-sm-2 bgside p-0 mr-0">
       <!-- SIDEBAR DIV -->
       <nav class="
-          navbar-expand-md 
+          navbar-expand-md
           flex-md-column flex-row
           align-items-center
           text-center
@@ -28,7 +28,7 @@
               <p class="title mostbold fsi-17 m-0 ml-1">Treinos</p>
             </li>
             <li class="nav-item fontblack">
-              <a href="#todosTreinos" class="nav-link active fontblack semibold unders"> Feed</a>
+              <a href="#todasaspostagens" class="nav-link active fontblack semibold unders"> Feed</a>
             </li>
             <li class="nav-item fontblack">
               <a href="#meusTreinos" class="nav-link fontblack semibold unders"> Meus Treinos</a>
@@ -106,7 +106,7 @@
         <!-- SEGUNDA LINHA POSTS-->
 
         <h2 class="ml-10 col-sm-8 text-center p-2" id="todosTreinos">Todas as postagens</h2>
-        
+
         <div class="ml-10 col-sm-8"><!-- inicio todas as postagens -->
           <div class="card text-center mt-4 mb-4 bgpostagem row d-inline-flex" *ngFor="let item of listaPostagens">
             <div class="row text-light container pb-1">
@@ -243,7 +243,7 @@
           </div>
         </div><!-- fim postagens por tema -->
 
-        
+
       </div>
     </div>
 
@@ -252,7 +252,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content ">
           <div class="modal-header lightBg">
-            <h5 class="headerStyle modal-title" id="exampleModalLabel">Nova Postagem</h5>
+            <h5 class="headerStyle modal-title" id="exampleModalLabel">Novo Treino</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -268,7 +268,7 @@
                 class="inputStyle form-control mb-2" />
 
               <p>
-                Escolha um tema ou
+                Escolha um equipamento ou
                 <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
               </p>
               <select name="" id="" class="inputStyle form-control" [(ngModel)]="idTema" (change)="getTemaById()">
