@@ -37,22 +37,19 @@
               <p class="title mostbold fsi-17 m-0 ml-1">Treinos</p>
             </li>
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="fundinho nav-link active fontblack semibold unders" style="text-decoration: none; color: black"
+                id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                aria-selected="true">Feed</a>
 
-              <a class="fundinho nav-link active fontblack semibold unders" style="text-decoration:none; color:black;" id="v-pills-home-tab" data-toggle="pill"
-                href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Feed</a>
+              <a class="fundinho nav-link fontblack semibold unders" style="text-decoration: none; color: black"
+                id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                aria-controls="v-pills-profile" aria-selected="false">Meus Treinos</a>
 
+              <a class="fundinho nav-link fontblack semibold unders" style="text-decoration: none; color: black"
+                id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">Treinos por Equipamentos</a>
 
-              <a class="fundinho nav-link fontblack semibold unders" style="text-decoration:none; color:black" id="v-pills-profile-tab" data-toggle="pill"
-                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Meus
-                Treinos</a>
-
-
-              <a class="fundinho nav-link fontblack semibold unders" style="text-decoration:none; color:black" id="v-pills-messages-tab" data-toggle="pill"
-                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Treinos por
-                Equipamentos</a>
-
-                <hr>
-
+              <hr />
             </div>
 
             <li class="nav-item d-flex justify-content-center">
@@ -60,12 +57,13 @@
               <p class="title fontblack mostbold fsi-17 m-0 ml-1">Opções</p>
             </li>
             <li class="nav-item">
-              <a [routerLink]="['/usuario-edit', id]" style="text-decoration:none;" class="nav-link fontblack semibold unders">
+              <a [routerLink]="['/usuario-edit', id]" style="text-decoration: none"
+                class="nav-link fontblack semibold unders">
                 Editar Perfil
               </a>
             </li>
             <li class="nav-item">
-              <a routerLink="/tema" style="text-decoration:none;" class="nav-link fontblack font-weight-bold unders">
+              <a routerLink="/tema" style="text-decoration: none" class="nav-link fontblack font-weight-bold unders">
                 Editar Equipamentos
               </a>
             </li>
@@ -121,9 +119,10 @@
         <!--DIV TABS -->
         <div class="col-12">
           <div class="tab-content" id="v-pills-tabContent">
-            <!--DIV FEED TAB -->
+
+            <!--FEED TAB -->
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-              <!-- DIV FEED -->
+              <!-- FEED -->
               <h2 class="ml-10 col-sm-8 text-center p-2" id="todosTreinos">
                 Todas as postagens
               </h2>
@@ -143,7 +142,6 @@
                       <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px" />
                     </div>
 
-
                     <div class="col-md-5 px-1">
                       <div class="row justify-content-start">
                         <div class="w-100 mb-0 d-flex">
@@ -155,7 +153,7 @@
                                 mb-0
                                 font-italic
                               ">
-                              {{ item.texto }}
+                              {{ calculaEco(item.tema.economia, item.texto) }}
                             </h1>
                           </div>
                           <div class="ml-2 mt-5">
@@ -178,9 +176,8 @@
                               }}</span>
                           </h6>
                           <p class="card-text text-left">
-                            e economizou
-                            <span class="font-italic font-weight-bold">
-                              {{ item.texto }}khz</span>
+                            e economizou <span class="font-italic font-weight-bold"> {{calculaEco(item.tema.economia,
+                              item.texto)}}khz</span>
                           </p>
                         </div>
                       </div>
@@ -195,49 +192,29 @@
                       </p>
                       <p class="card-text"></p>
                     </div>
-
-                    <!-- <div class="text-left">
-                      <h1 class="text-left font-weight-bold rem-4 mb-0 font-italic">{{calculaEco(item.tema.economia, item.texto)}} </h1>
-                    </div>
-                    <div class="ml-2 mt-5"><span class="align-text-bottom"> watts</span></div>
                   </div>
-      
-                  <div class="text-left">
-                  </div>      
-      
-                    <h6 class="card-title pt-0 m-0 mb-1 text-left">
-                      {{ item.usuario.nome.split(" ",1) }} correu por <span class=" font-weight-bold font-italic">{{ item.texto }} MINUTOS</span>
-                    </h6>
-      
-                  <div class="mb-2">
-                    <h6 class="card-title mb-1 text-left">no equipamento <span class="font-weight-bold font-italic">{{ item.tema.equipamento }}</span></h6>
-                    <p class="card-text text-left"> e economizou <span class="font-italic font-weight-bold"> {{calculaEco(item.tema.economia, item.texto)}}khz</span></p>
-
-                  </div> -->
                 </div>
-              </div>
-              <!-- /DIV FEED -->
-            </div>
 
+              </div>
+              <!--/DIV FEED -->
+            </div>
             <!--/DIV FEED TAB -->
 
-            <!--DIV MEUS TREINOS TAB -->
+            <!--MEUS TREINOS TAB -->
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-              <!--DIV MEUS TREINOS -->
-              <h2 class="ml-10 col-sm-8 text-center p-2" id="meusTreinos">
-                Meus Treinos
-              </h2>
 
+              <!-- MEUS TREINOS -->
+              <h2 class="ml-10 col-sm-8 text-center p-2" id="meusTreinos">Meus Treinos</h2>
               <div class="ml-10 col-sm-8">
                 <div class="
-                    card
-                    text-center
-                    mt-4
-                    mb-4
-                    bgpostagem
-                    row
-                    d-inline-flex
-                  " *ngFor="let item of usuario.postagens">
+                      card
+                      text-center
+                      mt-4
+                      mb-4
+                      bgpostagem
+                      row
+                      d-inline-flex
+                    " *ngFor="let item of usuario.postagens">
                   <div class="row text-light container pb-1">
                     <div class="col-md-3 align-self-center align-items-center">
                       <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px" />
@@ -246,31 +223,34 @@
                       <div class="row justify-content-start">
                         <div class="w-100 d-flex">
                           <div class="text-center">
-                            <h1 class="p-0 pl-3 m-0 font-weight-bold rem-4">
-                              {{ item.texto }}
-                            </h1>
+                            <h1 class="text-left font-weight-bold rem-4 mt-1 mb-0 font-italic">
+                              {{calculaEco(item.tema.economia, item.texto)}}</h1>
                           </div>
                           <div>
                             <h6 class="p-0 pt-3">Watts</h6>
                           </div>
                         </div>
+
                         <div class="text-left"></div>
-                        <h6 class="card-title m-0 text-left">
-                          {{ usuario.nome.split(" ", 1) }} correu por
-                          <span class="font-weight-bold">{{ item.texto }} MINUTOS</span>
+
+                        <h6 class="card-title pt-0 m-0 mb-1 text-left">
+                          {{usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold font-italic">{{
+                            item.texto }}
+                            MINUTOS</span>
                         </h6>
                         <small class="text-muted">no equipamento
                           <span class="font-weight-bold">{{
                             item.tema.equipamento
                             }}</span></small>
-                        <p class="card-text">
-                          e economizou {{ item.texto }}khz
-                        </p>
+                        <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold">
+                            {{calculaEco(item.tema.economia, item.texto)}}khz</span></p>
                       </div>
                     </div>
                     <div class="col-md-4 h-100 align-self-center">
                       <h5 class="card-title font-weight-bold">
-                        <span class="font-weight-bold">{{ item.titulo }}</span>
+                        <span class="font-weight-bold">{{
+                          item.titulo
+                          }}</span>
                       </h5>
                       <p class="card-text">
                         <small class="text-muted">{{ item.date | date: "dd/MM/yyyy" }} ás
@@ -279,64 +259,28 @@
                       <p class="card-text"></p>
                     </div>
                   </div>
-
-
-         <!-- </div>
-        </div><!-- fim todas as postagens -->
-
-        <h2 class="ml-10 col-sm-8 text-center p-2" id="meusTreinos">Minhas Postagens</h2>
-
-        <div class="ml-10 col-sm-8" ><!-- inicio minhas postagens -->
-          <div class="card text-center mt-4 mb-4 bgpostagem row d-inline-flex" *ngFor="let item of usuario.postagens">
-            <div class="row text-light container pb-1">
-              <div class="col-md-3 align-self-center align-items-center">
-                <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px">
-              </div>
-              <div class="col-md-5 px-1">
-                <div class="row justify-content-start">
-                  <div class="w-100 d-flex">
-                    <div class="mt-2 text-center">
-                      <h1 class="text-left font-weight-bold rem-4 mt-1 mb-0 font-italic">{{calculaEco(item.tema.economia, item.texto)}}</h1>
-                    </div>
-                    <div class="ml-2 mt-5">
-                      <h6 class="p-0 pt-3">watts</h6>
-                    </div>
-                  </div>
-                  <div class="text-left">
-                  </div>
-                  <h6 class="card-title pt-0 m-0 mb-1 text-left">
-                    {{usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold font-italic">{{ item.texto }}
-                      MINUTOS</span>
-                  </h6>
-                  <div class="mb-2">
-                  <h6 class="card-title mb-1 text-left">no equipamento <span class="font-weight-bold font-italic">{{ item.tema.equipamento }}</span></h6>
-                  <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold"> {{calculaEco(item.tema.economia, item.texto)}}khz</span></p>
-                  </div> -->
-
                 </div>
               </div>
-              <!--/DIV MEUS TREINOS -->
+              <!--/ MEUS TREINOS -->
+
             </div>
+            <!--/MEUS TREINOS TAB -->
 
-            <!--/DIVMEUS TREINOS TAB -->
-
-            <!--DIV EQUIPAMENTOS TAB -->
+            <!--EQUIPAMENTOS TAB -->
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-              <!--DIV EQUIPAMENTOS -->
-              <h2 class="ml-10 col-sm-8 text-center p-2" id="temaTreinos">
-                Postagens por Equipamentos
-              </h2>
+              <!--EQUIPAMENTOS -->
+              <h2 class="ml-10 col-sm-8 text-center p-2" id="temaTreinos">Postagens por Equipamentos</h2>
 
               <div class="ml-10 col-sm-8" *ngFor="let tema of listaTemas">
                 <div class="
-                    card
-                    text-center
-                    mt-4
-                    mb-4
-                    bgpostagem
-                    row
-                    d-inline-flex
-                  " *ngFor="let item of tema.postagem">
+                      card
+                      text-center
+                      mt-4
+                      mb-4
+                      bgpostagem
+                      row
+                      d-inline-flex
+                    " *ngFor="let item of tema.postagem">
                   <div class="row text-light container pb-1">
                     <div class="col-md-3 align-self-center align-items-center">
                       <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px" />
@@ -345,31 +289,34 @@
                       <div class="row justify-content-start">
                         <div class="w-100 d-flex">
                           <div class="text-center">
-                            <h1 class="p-0 pl-3 m-0 font-weight-bold rem-4">
-                              {{ item.texto }}
-                            </h1>
+                            <h1 class="text-left font-weight-bold rem-4 mt-1 mb-0 font-italic">
+                              {{calculaEco(item.tema.economia, item.texto)}}</h1>
                           </div>
                           <div>
                             <h6 class="p-0 pt-3">Watts</h6>
                           </div>
                         </div>
+
                         <div class="text-left"></div>
-                        <h6 class="card-title m-0 text-left">
-                          {{ item.usuario.nome.split(" ", 1) }} correu por
-                          <span class="font-weight-bold">{{ item.texto }} MINUTOS</span>
+
+                        <h6 class="card-title pt-0 m-0 mb-1 text-left">
+                          {{usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold font-italic">{{
+                            item.texto }}
+                            MINUTOS</span>
                         </h6>
                         <small class="text-muted">no equipamento
                           <span class="font-weight-bold">{{
-                            tema.equipamento
+                            item.tema.equipamento
                             }}</span></small>
-                        <p class="card-text">
-                          e economizou {{ item.texto }}khz
-                        </p>
+                        <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold">
+                            {{calculaEco(item.tema.economia, item.texto)}}khz</span></p>
                       </div>
                     </div>
                     <div class="col-md-4 h-100 align-self-center">
                       <h5 class="card-title font-weight-bold">
-                        <span class="font-weight-bold">{{ item.titulo }}</span>
+                        <span class="font-weight-bold">{{
+                          item.titulo
+                          }}</span>
                       </h5>
                       <p class="card-text">
                         <small class="text-muted">{{ item.date | date: "dd/MM/yyyy" }} ás
@@ -378,97 +325,65 @@
                       <p class="card-text"></p>
                     </div>
                   </div>
-
-
-          <!-- </div>
-        </div><!-- fim minhas as postagens -->
-
-        <h2 class="ml-10 col-sm-8 text-center p-2" id="temaTreinos">Postagens por Tema</h2>
-
-        <div class="ml-10 col-sm-8" *ngFor="let tema of listaTemas"><!-- inicio postagens por tema -->
-          <div class="card text-center mt-4 mb-4 bgpostagem row d-inline-flex" *ngFor="let item of tema.postagem">
-            <div class="row text-light container pb-1">
-              <div class="col-md-3 align-self-center align-items-center">
-                <img src="https://imgur.com/gQOvoQZ.png" alt="" width="150px">
-              </div>
-              <div class="col-md-5 px-1">
-                <div class="row justify-content-start">
-                  <div class="w-100 d-flex">
-                    <div class="mt-2 text-center">
-                      <h1 class="text-left font-weight-bold rem-4 mt-1 mb-0 font-italic">{{calculaEco(tema.economia, item.texto)}}</h1>
-                    </div>
-                    <div class="ml-2 mt-5">
-                      <h6 class="p-0 pt-3">watts</h6>
-                    </div>
-                  </div>
-                  <div class="text-left">
-                  </div>
-                  <h6 class="card-title pt-0 m-0 mb-1 text-left">
-                    {{item.usuario.nome.split(" ",1) }} correu por <span class="font-weight-bold font-italic">{{ item.texto }}
-                      MINUTOS</span>
-                  </h6>
-                  <div class="mb-2">
-                  <h6 class="card-title mb-1 text-left">no equipamento <span class="font-weight-bold font-italic">{{tema.equipamento
-                      }}</span></h6>
-                  <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold">{{ calculaEco(tema.economia, item.texto) }}watts</span></p>
-                </div> -->
-                
-
                 </div>
               </div>
-              <!--/DIV EQUIPAMENTOS -->
+              <!--/EQUIPAMENTOS -->
+
             </div>
-            <!--/DIV EQUIPAMENTOS TAB -->
+            <!--/EQUIPAMENTOS TAB -->
+
+          </div>
+        </div>
+        <!--FIM ROW-->
+      </div>
+
+      <!-- MODAL NOVA POSTAGEM -->
+      <div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="novaPostagem" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header lightBg">
+              <h5 class="headerStyle modal-title" id="exampleModalLabel">
+                Nova Postagem
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body lightBg">
+              <div class="form-group">
+                <label for="titulo">Título</label>
+                <input [(ngModel)]="postagem.titulo" type="text" placeholder="Digite o titulo"
+                  class="inputStyle form-control mb-2" />
+
+                <label for="titulo">Duração do Treino(em minutos)</label>
+                <input [(ngModel)]="postagem.texto" type="text" placeholder="Digite o titulo"
+                  class="inputStyle form-control mb-2" />
+
+                <p>
+                  Escolha um Equipamento ou
+                  <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
+                </p>
+                <select name="" id="" class="inputStyle form-control" [(ngModel)]="idTema" (change)="getTemaById()">
+                  <option *ngFor="let item of listaTemas" value="{{ item.id }}">
+                    {{ item.equipamento }}
+                  </option>
+                </select>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btnCancel" data-dismiss="modal">
+                  Cancelar
+                </button>
+                <button type="button" class="btn btnAtualizar" (click)="publicar()" data-dismiss="modal">
+                  Publicar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!--FIM ROW-->
-    </div>
 
-    <!-- MODAL NOVA POSTAGEM -->
-    <div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="novaPostagem" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header lightBg">
-            <h5 class="headerStyle modal-title" id="exampleModalLabel">
-              Nova Postagem
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body lightBg">
-            <div class="form-group">
-              <label for="titulo">Título</label>
-              <input [(ngModel)]="postagem.titulo" type="text" placeholder="Digite o titulo"
-                class="inputStyle form-control mb-2" />
-
-              <label for="titulo">Duração do Treino(em minutos)</label>
-              <input [(ngModel)]="postagem.texto" type="text" placeholder="Digite o titulo"
-                class="inputStyle form-control mb-2" />
-
-              <p>
-                Escolha um tema ou
-                <a routerLink="/tema" data-dismiss="modal">cadastre um novo</a>
-              </p>
-              <select name="" id="" class="inputStyle form-control" [(ngModel)]="idTema" (change)="getTemaById()">
-                <option *ngFor="let item of listaTemas" value="{{ item.id }}">
-                  {{ item.equipamento }}
-                </option>
-              </select>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btnCancel" data-dismiss="modal">
-                Cancelar
-              </button>
-              <button type="button" class="btn btnAtualizar" (click)="publicar()" data-dismiss="modal">
-                Publicar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
