@@ -1,21 +1,21 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
-  selector: 'app-sobrenos',
-  templateUrl: './sobrenos.component.html',
-  styleUrls: ['./sobrenos.component.css']
+  selector: 'app-perguntasfrequentes',
+  templateUrl: './perguntasfrequentes.component.html',
+  styleUrls: ['./perguntasfrequentes.component.css']
 })
-export class SobrenosComponent implements OnInit {
-  
-  
+export class PerguntasfrequentesComponent implements OnInit {
+
   constructor(
     private router: Router,
-    
-  ) { 
-    
-  }
+
+    ) {
+
+    }
 
   ngOnInit(): void {
     if(environment.token == ""){
@@ -27,5 +27,5 @@ export class SobrenosComponent implements OnInit {
   inicio(){
     this.router.navigate(['/inicio'])
   }
-  
+
 }

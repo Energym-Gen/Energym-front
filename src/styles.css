@@ -4,6 +4,59 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* scroll smooth */
+html{
+  scroll-behavior: smooth;
+}
+
 .bg-fundo{
     background-color: #545454;
+}
+
+.lightBg {
+    background-color: #fffff3;
+  }
+
+.headerStyle {
+  color: #3e3e3e;
+  text-shadow: 0px 2px 4px #000000;
+  text-shadow: -1px 2px rgb(196, 196, 196);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsla(0, 0%, 100%, 0.5);
+    opacity: 1; /* Firefox */
+  }
+
+  
+  /* INPUT */
+
+.inputStyle {
+    background-color: #414747;
+    color: white;
+    text-align: center;
+  }
+
+.inputStyle:hover {
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+    0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.inputStyle:focus {
+  color: white;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+    0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* BOTOES */
+
+.btnCancel{
+    background-color: #F86868;
+    color: #fffff3;
+}
+
+.btnAtualizar{
+    background-color: #36B85B;
+    color: #fffff3;
 }

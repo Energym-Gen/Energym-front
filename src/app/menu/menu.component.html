@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow fundo">
   <button
     class="navbar-toggler"
     type="button"
@@ -11,11 +11,14 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto d-flex align-items-center">
+  <div
+    class="collapse navbar-collapse d-flex justify-content-between"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav d-flex align-items-center">
       <li class="nav-item active">
         <img
-          src="{{foto}}"
+          src="{{ foto }}"
           alt="Imagem do user"
           width="50px"
           height="50px"
@@ -23,24 +26,21 @@
         />
       </li>
       <li class="nav-item pl-5">
-        <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
+        <p class="m-0 font-weight-bold text-black fs-16">{{ nome.split(" ", 1) }}</p>
       </li>
 
       <li class="nav-item pl-3">
         <a [routerLink]="['/usuario-edit', id]">
-          <p class="text-white fs-16 m-0">
+          <p class="text-dark fs-16 m-0">
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           </p>
         </a>
       </li>
     </ul>
 
-    <ul class="navbar-nav mw-auto d-flex align-items-center">
-      <li class="nav-item pl-3">
-        <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">
-          Sair <i class="fa fa-sign-out" aria-hidden="true"></i
-        ></a>
-      </li>
-    </ul>
+    <h1>EnerGym</h1>
+    <a (click)="sair()" class="m-0 font-weight-bold text-dark fs-16">
+      Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
+    </a>
   </div>
 </nav>

@@ -15,8 +15,11 @@
 ## < Sobre >
 
 <p>
-    Energym é uma rede social para academias ecológicas que geram energia elétrica por meio de seus equipamentos através do uso dos clientes da rede. 
-        Revertendo a energia gerada para populações em situação de extrema vulnerabilidade.
+    Energym é uma rede social para academias ecológicas que geram energia elétrica por meio de seus equipamentos através do uso dos clientes da rede.   
+</p>
+
+<p>
+  A plataforma tem como intuito divulgar atualizações de clientes, através de postagens, onde que o cliente faz uma publicação e a plataforma informa o quanto de energia foi gerado.
 </p>
 
 ## < Tecnologias Utilizadas >

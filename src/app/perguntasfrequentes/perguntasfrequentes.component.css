@@ -1,0 +1,22 @@
+.bg-principal{
+    background-color: #292E1E;
+}
+
+.bg-secundario{
+    background-color: #E5E5E5;
+    
+}
+
+.altura{
+    height: 1000px;
+}
+
+.bordinha-form{
+    border: 1px solid #dee2d6;
+    border-radius: 5px;
+    width: 400px;
+    margin:5px;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}

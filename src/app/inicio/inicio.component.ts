@@ -26,10 +26,13 @@ export class InicioComponent implements OnInit {
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
+  id = environment.id
 
 
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
+
+
 
 
   
@@ -45,14 +48,17 @@ export class InicioComponent implements OnInit {
   ngOnInit(){
 
     window.scroll(0,0)
-    if(environment.token == ""){
-      alert("Sua sessão expirou, faça o login novamente")
+     if(environment.token == ""){
+       alert("Sua sessão expirou, faça o login novamente")
       this.router.navigate(["/login"])
-    }
+     }
 
     this.authh.refreshToken()
     this.getAllTemas()
     this.getAllPostagens()
+    this.findByIdUsuario()
+
+    console.log(this.usuario.postagens)
 
   }
 
@@ -60,7 +66,6 @@ export class InicioComponent implements OnInit {
     this.temaService.getAllTemas().subscribe((resp: Tema[]) =>{
       this.listaTemas = resp
     })
-
   }
 
   getTemaById(){
@@ -71,14 +76,12 @@ export class InicioComponent implements OnInit {
 
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) =>{
-      console.log(resp)
       this.listaPostagens = resp
     })
   }
 
   findByIdUsuario(){
     this.authh.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) =>{
-      console.log(environment.id)
       this.usuario = resp
     })
   }
@@ -97,6 +100,12 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens()
       this.router.navigate(['/inicio'])
     })
+  }
+
+  calculaEco(ecoequip: number, minutos: string){
+
+     return Number(ecoequip) * Number(minutos) 
+
   }
 
 

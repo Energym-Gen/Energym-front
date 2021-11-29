@@ -1,119 +1,87 @@
-#img-bg{
-    background-image: url('https://i.imgur.com/QALgrNJ.jpeg');
-    min-height: 100vh;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.login-form-1 {
+  padding: 10%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  background-color: #14b287;
+}
+.login-form-1 h3 {
+  background-color: transparent;
+  text-align: center;
+  color: #333;
+}
+.login-form-2 {
+  padding: 5%;
+  background: #292e1e;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: transparent;
+}
+.login-container form {
+  padding: 10%;
+  border-radius: 10px;
 }
 
-.backg {
-    background-color: rgb(255, 255, 255) !important;
+#btn_cad {
+  background-color: transparent;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: #d4d4c7;
+  box-shadow: 0 0 40px 40p inset;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
 }
-
-.backg-cad {
-    background-color:#545454;
-   
-}
-
-#btn_cad{
-    background-color: #545454;
-    font-size: 1rem;
-    border-radius: 5px;
-    border-color: #d8db34;
-    box-shadow: 0 0 40px 40px #EFFA00 inset, ;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-    border-radius: 5px;
-    font-weight: bold;
-   
-}
-
 #btn_cad:hover {
-    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
-    background:#545454;
-    
-  }
+  box-shadow: 0 0 2px 0 #f3efef inset, 0 0 6px 4px #f3efef;
+}
 
-#btn_log{
-    background-color: #EFFA00;
-    font-size: 1rem;
-    border-radius: 5px;
-    border-color: #d8db34;
-    box-shadow: 0 0 40px 40px #EFFA00 inset, ;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-    border-radius: 5px;
-    font-weight: bold;
-   
+#btn_log {
+  background-color: #effa00;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: #d4d4c7;
+  box-shadow: 0 0 40px 40p inset;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 120px;
+  height: 10;
+  color: #292e1e;
 }
 
 #btn_log:hover {
-    box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
-    background:#EFFA00;
-    
-  }
-
-.backg-text-cad{
-  color:#545454;
-  font-size: 38;
-  
-  
+  box-shadow: 0 0 2px 0 #f3efef inset, 0 0 6px 4px #f3efef;
+  background: #effa00;
 }
-.backg-text-log{
-    color:rgb(41, 43, 44);
-    font-size: 32;
-    
-  }
-  
-  .card{
-  /* position: relative; */
-  /* z-index: 1; */
-  background: #545454;
-  max-width: 360px;
-  padding: 45px;
-  height: 70vh;
-  border: 0
-  }
 
-  .bordinha {
-    box-shadow: 0 0 1em grey
-  }
+.bordinha {
+  box-shadow: 0 0 1em grey;
+  border-radius: 10px;
+}
 
-  .backg-card2{
-    background-color: #EFFA00;
-    max-width: 360px;
-    width: 340px;
-    padding: 45px;
-    height: 70vh;
-    border: 0
-  }
+.MN {
+  font-size: 3rem;
+  font-weight: bold;
+ }
 
-  .font-cad{
-    font-weight: bold;
-  }
+ .font{
+  font-weight: 1000;
+ }
 
-  .font-energym{
-   font-weight: bolder;
-  }
-
-  .color-inicio{
-     color: #EFFA00 !important;
-  }
-  
-  label {
-    color: #ffffff;
-    position: relative;
-    text-shadow: 0.1em 0.1em 0.2em black
-  }
-
-  
-  
-
-  
+ ::placeholder{
+   color: #292e1e;
+}
 
 
-  
 
-  
-  
+
+
+

@@ -1,47 +1,13 @@
-.content {
-  width: 500px;
-  margin: 0px auto;
-  position: relative;
+html {
+  background:#EFEFEF ;
 }
 
-h1 {
-  font-size: 48px;
-  color: #ffffff;
-  padding: 10px 0;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 30px;
-}
-h1:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 10px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
-  background: linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
-}
 
 /* formatando o cabeçalho dos formulários */
 h1 {
-  box-shadow: 0.1em 0.1em 0.2em #545454;
+
   font-size: 48px;
-  color: #effa00;
+  color: #ffffff;
   text-shadow: 0.1em 0.1em 0.2em black;
   padding: 10px 0;
   font-family: Arial, sans-serif;
@@ -55,22 +21,8 @@ h1:after {
   width: 100%;
   height: 2px;
   margin-top: 10px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
-  background: linear-gradient(
-    left,
-    rgba(147, 184, 189, 0) 0%,
-    rgba(147, 184, 189, 0.8) 20%,
-    rgba(147, 184, 189, 1) 53%,
-    rgba(147, 184, 189, 0.8) 79%,
-    rgba(147, 184, 189, 0) 100%
-  );
+
+
 }
 
 p {
@@ -96,7 +48,7 @@ label {
   background: #effa00;
 }
 .style-bt:hover {
-  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+  box-shadow: 0 0 2px 0 #ffffff inset, 0 0 10px 1px #ffffff;
   background: #effa00;
 }
 .style-cancelar {
@@ -111,7 +63,7 @@ label {
   font-weight: bold;
 }
 .style-cancelar:hover {
-  box-shadow: 0 0 10px 0 #ffffff inset, 0 0 10px 4px #ffffff;
+  box-shadow: 0 0 2px 0 #ffffff inset, 0 0 10px 1px #ffffff;
   background: #a90f33;
 }
 
@@ -121,7 +73,7 @@ label {
   width: 65%;
   padding: 18px 6% 60px 6%;
   margin: 0 0 35px 0;
-  background-color: #545454;
+  background-color: #292e1e;
 
   border-radius: 16px;
 
