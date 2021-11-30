@@ -154,7 +154,7 @@
                                 mb-0
                                 font-italic
                               ">
-                              {{ item.texto }}
+                              {{calculaEco(item.tema.economia, item.texto)}}
                             </h1>
                           </div>
                           <div class="ml-2 mt-5">
@@ -241,7 +241,7 @@
                         </h6>
                         <div class="mb-2">
                           <h6 class="card-title mb-1 text-left">no equipamento <span class="font-weight-bold font-italic">{{ item.tema.equipamento }}</span></h6>
-                          <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold"> {{calculaEco(item.tema.economia, item.texto)}}khz</span></p>
+                          <p class="card-text text-left">e economizou <span class="font-italic font-weight-bold"> {{calculaEco(item.tema.economia, item.texto)}}watts</span></p>
                         </div>
 
                       </div>
