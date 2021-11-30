@@ -32,7 +32,6 @@ export class InicioComponent implements OnInit {
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
 
-  ecoTreino: number
 
 
 
@@ -103,12 +102,11 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  calculaEco(ecoantes: number, minut:number){
-    this.postagem.texto = " "+ecoantes*minut   
+  calculaEco(ecoequip: number, minutos: string){
+
+     return Number(ecoequip) * Number(minutos) 
 
   }
 
 
 }
-
-
