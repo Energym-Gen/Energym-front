@@ -1,4 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  
   <button
     class="navbar-toggler"
     type="button"
@@ -15,6 +16,7 @@
     class="collapse navbar-collapse d-flex justify-content-between"
     id="navbarSupportedContent"
   >
+  <div class="col-sm-5">
     <ul class="navbar-nav d-flex align-items-center">
       <li class="nav-item active">
         <img
@@ -37,10 +39,14 @@
         </a>
       </li>
     </ul>
+  </div>
 
-    <h1>EnerGym</h1>
-    <a (click)="sair()" class="m-0 font-weight-bold text-dark fs-16">
-      Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
-    </a>
+    <div class='col-5 d-flex ml-9'><h1 class="d-flex mr-5">EnerGym</h1></div>
+
+    <div class='col-2 d-flex justify-content-end align-content-end'>
+    <a (click)="sair()" class="text-dark fs-16" >
+      Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+    </div>
   </div>
 </nav>
