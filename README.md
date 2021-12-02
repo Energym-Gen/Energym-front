@@ -1,6 +1,9 @@
 <em>* Em Desenvolvimento *</em>
 
 # <strong>Energym </strong>
+<p align="center">
+<img src ="https://user-images.githubusercontent.com/42879442/144438946-7fa26f59-309b-4df1-8a5b-4e10a95586b0.png" width="300" align="center" title="hover text">
+</p>
 
 ## < Indice >
 
@@ -8,6 +11,8 @@
     <li>Sobre</li>
     <li>Tecnologias Utilizadas</li>
     <li>Desenvolvedores</li>
+    <li>Implementações Futuras</li>
+    <li>Instrutores</li>
 </ul>
 
 
@@ -25,32 +30,66 @@
 ## < Tecnologias Utilizadas >
 
 ### Back-End
-<ul>
-    <li>Java</li>
-    <li>Spring Boot</li>
-    <li>MySQL</li>
-</ul>
+<div style="display: inline_block">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="80px" />
+</div><br>
 
 ### Front-End
-<ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>Bootstrap</li>
-    <li>Angular</li>
-    <li>TypeScript</li>
-</ul>
+<div style="display: inline_block">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="80px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80px" />
+</div><br>
+
+### Gestão
+<div style="display: inline_block">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" width="80px" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" width="80px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="80px"/>
+</div><br>
 
 ## < Desenvolvedores >
+<table border="3">
+    <tr>
+        <td><img src="https://github.com/elaoliveira.png" width="100px"></td>
+        <td>Rafaela Oliveira<br><a href="https://github.com/elaoliveira">Github</a></td>
+        <td><img src="https://github.com/Gabriela17tx.png" width="100px"></td>
+        <td>Gabriela Teixeira<br><a href="https://github.com/Gabriela17tx">Github</a></td>
+      <td><img src="https://github.com/MatheusMMonteiro.png" width="100px"></td>
+        <td>Matheus Monteiro<br><a href="https://github.com/MatheusMMonteiro">Github</a></td>
+    </tr>   
+      <tr>
+        <td><img src="https://github.com/ranimendes.png" width="100px"></td>
+        <td>Raniel Mendes<br><a href="https://github.com/ranimendes">Github</a></td>
+        <td><img src="https://github.com/vitorvnc.png" width="100px"></td>
+        <td>Vitor Freitas<br><a href="https://github.com/vitorvnc">Github</a></td>
+        <td><img src="https://github.com/Wendell2509.png" width="100px"></td>
+        <td>Wendell Franco<br><a href="https://github.com/Wendell2509">Github</a></td>
+    </tr>
+ </table>
 
-<ul>
-    <li>Gabriela</li>
-    <li>Vitor Vinicius</li>
-    <li>Matheus</li>
-    <li>Raniel</li>
-    <li>Rafaela</li>
-    <li>Wendell</li>
-</ul>
+## Implementações futuras
+- Comentários e Curtidas
+- Favoritos
+- Resposividade
 
-## Implementações futuras*
+## Instrutores
+ <table>
+  <tr>
+        <td><img src="https://github.com/tjfaccipieri.png" width="100px"></td>
+        <td>Thiago Faccipieri<br><a href="https://github.com/tjfaccipieri">Github</a></td>
+        <td><img src="https://github.com/GustavoBoaz.png" width="100px"></td>
+        <td>Gustavo Boaz<br><a href="https://github.com/GustavoBoaz">Github</a></td>
+        <td><img src="https://github.com/Jefferson-Itajahy.png" width="100px"></td>
+        <td>Jefferson Itajahy<br><a href="https://github.com/Jefferson-Itajahy">Github</a></td>
+    </tr>
 
-## Instrutores*
+</table>
+
+## License
+
+[MIT License](./LICENSE)
